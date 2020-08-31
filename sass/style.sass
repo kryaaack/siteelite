@@ -1,0 +1,316 @@
+html
+    
+section
+    display: flex
+    min-height: 100vh
+    .menu
+        display: flex
+        flex-direction: column
+        width: 16vw
+        height: 100vh
+        background: url('/img/background_menu.png') center (center/cover) no-repeat
+        &__logo
+            &-main
+                position: relative
+                margin: 0 auto
+                margin-top: 2.6vh
+                width: 12.5vw
+                display: flex
+                justify-content: center
+                flex-direction: row
+                align-items: center
+                img
+                    width: 12.5vw
+                    height: 7.05vh
+                span
+                    position: absolute
+                    text-align: center
+                    font-family: Georgia
+                    font-size: 4vh
+                    font-weight: 400
+                    text-transform: uppercase
+                    color: #f4f4f4
+            &-line
+                position: absolute
+                left: 2.43vw
+                margin-top: 0.13vh
+                width: 4.18vw
+                height: 2px
+                opacity: 0.41
+                background-color: #c57c40
+            &-descr
+                position: absolute
+                top: 9.2vh
+                left: 7.02vw
+                font-family: Open Sans
+                font-size: 1.5vh
+                font-weight: 300
+                color: #aaa9a9
+                text-transform: uppercase
+        &__descr
+            margin-top: 2.97vh
+            margin-left: 1.96vw
+            margin-right: 2vw
+            font-family: Open Sans
+            font-size: 1.5vh
+            line-height: 1.85vh
+            font-weight: 300
+            color: #aaa9a9
+        nav
+            margin-top: 13.9vh
+            a
+                display: block
+                position: relative
+                margin-left: 1.96vw
+                font-family: Open Sans
+                font-size: 1.5vh
+                line-height: 0
+                text-transform: uppercase
+                color: #f7f7f7
+                font-weight: 300
+                text-decoration: none
+                .newone
+                    position: absolute
+                    width: 1.75vw
+                    height: 2.13vh
+                    right: 0
+                    top: 50%
+                    transform: translateY(-50%)
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    img
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%)
+                        right: 0
+                    span
+                        margin-left: 0.06vw
+                        font-family: Open Sans
+                        font-weight: 400
+                        text-transform: uppercase
+                        color: #f0f0f0
+                        z-index: 2
+            hr
+                border-bottom: 0
+                margin: 3vh 0 3vh 0
+                opacity: 0.58
+                background-color: #686464
+        &__bottomnav
+            margin-top: 6.25vh
+            margin-left: 1.96vw
+            a
+                display: block
+                font-family: Open Sans
+                font-size: 1.5vh
+                line-height: 2.97vh
+                font-weight: 300
+                color: #bdbdbd
+                text-decoration: none
+        &__contact
+            margin-left: 1.96vw
+            display: block
+            margin-top: 3.75vh
+            font-family: Open Sans
+            font-size: 1.5vh
+            line-height: 3vh
+            text-transform: none
+            color: #c57c40
+            .callback
+                font-size: 1.5vh
+                color: #c57c40
+                text-decoration: none
+                text-transform: none
+            a
+                display: block
+                font-family: Open Sans
+                font-size: 1.85vh
+                margin-top: 0px
+                font-weight: 300
+                text-transform: uppercase
+                color: #fefefe
+                text-decoration: none
+            span
+                display: block
+                margin-top: 0vh
+                font-family: Open Sans
+                line-height: 0
+                font-weight: 300
+                letter-spacing: 0.005em
+                color: #c57c40
+    .slider
+        position: relative
+        width: 84vw
+        min-height: 100vh
+        .owl-carousel
+            position: relative
+            div
+                img
+                    width: 100vw
+                    height: 100vh
+            .owl-dots
+                display: flex
+                position: absolute
+                bottom: 4.36vh
+                left: 4.18vw
+                .owl-dot
+                    outline: none
+                    span
+                        display: block
+                        background: #ffffff
+                .active
+                    outline: none
+                    span
+                        display: block
+                        transform: scale(1.6)
+        &__wrapper
+            z-index: 1
+            position: absolute
+            top: 72.89vh
+            left: 4.13vw
+            &-about
+                width: 43.3vw
+                height: 12.72vh
+                background-color: rgba(57, 49, 43, 0.5)
+                &-title
+                    z-index: 2
+                    margin: 1.48vh 1.75vw 1.48vh 0.67vw
+                    font-family: Noto Sans Regular
+                    font-size: 5.38vh
+                    line-height: 5.19vh
+                    font-weight: 400
+                    text-transform: uppercase
+                    color: #f0f0f0
+                    span
+                        display: block
+                        margin-top: 2.2vh
+                        font-size: 3.34vh
+            &-back
+                z-index: -1
+                position: absolute
+                top: 4.2vh
+                left: 1.6vw
+                width: 42.78vw
+                height: 12.72vh
+                background-color: rgba(45, 38, 30, 0.3)
+            &-more
+                position: absolute
+                left: 1vw
+                top: 14.5vh
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding-left: 1.23vw
+                padding-right: 0.87vw
+                width: 10.73vw
+                height: 3.99vh
+                background-color: #b36060
+                font-family: Lora Italic
+                font-size: 1.67vh
+                font-weight: 400
+                color: #fefefe
+
+.overlay
+    z-index: 2
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    background-color: rgba(32, 28, 27, 0.92)
+.modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 933px
+    min-height: 539px
+    background-color: #f2f2f2
+    &__all
+        display: flex
+    &__img
+        width: 347px
+        background-color: #f2f2f2
+        img
+            width: 100%
+            height: 100%
+    &__wrapper
+        width: 586px
+        padding: 48px 60px 37px 60px
+    &__close    
+        position: absolute
+        top: 23px
+        right: 20px
+        font-size: 41px
+        line-height: 21px
+        color: #796454
+        cursor: pointer
+    &__subtitle
+        font-family: Noto Sans Regular
+        font-size: 24px
+        line-height: 24px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 0.095em
+        color: #4a4a4a
+    .feed-form
+        .input-title
+            font-family: Open Sans
+            font-size: 14px
+            line-height: 22px
+            font-weight: 400
+            color: #716d6d
+            margin-top: 31px
+            margin-bottom: 9px
+            span
+                color: #b25252
+            &:first-child
+                margin-top: 38px
+        input
+            width: 466px
+            height: 45px
+            background-color: #ffffff
+            border: none
+            &.last
+                width: 466px
+                height: 107px
+                background-color: #ffffff
+        button
+            display: block
+            margin-top: 29px
+            margin-left: 250px
+            margin-right: 0
+            width: 216px
+            height: 41px
+            background-color: #db7d3a
+            border: none
+            border-radius: 2px
+            font-family: Lora Italic
+            font-size: 14px
+            line-height: 18px
+            font-weight: 400
+            font-style: italic
+            color: #ffffff
+    &__description
+        font-size: 14px
+        font-weight: 500
+        color: #0d0d0d
+        text-align: center
+    &_mini
+        min-height: 140px
+    .error
+        border: 1px solid red
+    label.error
+        font-family: Open Sans
+        font-size: 14px
+        line-height: 22px
+        font-weight: 400
+        color: #716d6d
+        margin-top: 31px
+        border: none
+        text-align: center
+        margin-bottom: 15px
+#consultation
+    display: none
+#thanks
+    display: none

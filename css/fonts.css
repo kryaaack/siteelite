@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Georgia Regular';
+    src: url('Georgia.eot');
+    src: url('Georgia.eot?#iefix') format('embedded-opentype'),
+    url('Georgia.woff') format('woff'),
+    url('Georgia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('OpenSans-Light.eot');
+    src: url('OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('OpenSans-Light.woff') format('woff'),
+    url('OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Noto Sans Regular';
+    src: url('/fonts/NotoSans.eot');
+    src: url('/fonts/NotoSans.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/NotoSans.woff') format('woff'),
+    url('/fonts/NotoSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Lora Italic';
+    src: url('/fonts/Lora-Italic.eot');
+    src: url('/fonts/Lora-Italic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Lora-Italic.woff') format('woff'),
+    url('/fonts/Lora-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
